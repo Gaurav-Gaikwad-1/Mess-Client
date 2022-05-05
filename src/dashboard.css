@@ -1,0 +1,244 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap");
+
+/* *,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: visible;
+  font-family: Nunito;
+} */
+
+/*****Customer-1st-Page CSS *******/
+
+/* Start */
+
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23343a40' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+ }
+ 
+ .carousel-control-next-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23343a40' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+ }
+.carousel-item{
+  width: 100%;
+  height: 300px;
+}
+
+#carousel-card-img {
+  margin: 10px;
+  width: 30%;
+  height: -webkit-fill-available;
+  border-radius: 5px;
+  box-shadow:3px 3px 7px 4px #ccc; ;
+}
+
+#customers {
+  /* font-family: 'Lora', serif; */
+  border-collapse: collapse;
+}
+
+#customers td {
+  /* border: 1px solid #ddd; */
+  padding: 8px;
+}
+
+#customers td:nth-child(2){
+  color: gray;
+
+}
+#customers td:nth-child(3){
+  font-weight: bold;
+
+}
+
+#customers tr:hover {background-color: #ddd;}
+
+.messCard{
+  border-radius: 10px;
+}
+.messCard:hover{
+  cursor: pointer;
+  transform: scale(1.03);
+  border: 0.5px solid #FFB800;
+  /* box-shadow: 0px 0px 15px 0px #FEC200; */
+}
+
+.price-tag h4 , h1{
+  font-family: 'Righteous', cursive;
+}
+
+
+/*** SideBar CSS ****/
+.navbar_toggle {
+  height: 3.5rem;
+  margin-left: 15px;
+  transform: scale(1.5);
+}
+
+.menu-bars {
+  cursor: pointer;
+  color: #FFB800;
+  font-size: 2rem;
+  /* background: none; */
+}
+
+.nav-toggle {
+  /* border: 2px solid black; */
+  width: 25px;
+  height: 84px;
+}
+
+
+.nav-menu {
+  background-color: #FFB800;
+  width: 30rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+  z-index: 2;
+}
+
+.nav-menu.active { /* important for sidebar*/
+  left: 0;
+  transition: 350ms;
+  color: white;
+}
+
+.nav-menu-items {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+}
+.sidebar-list{
+  position: relative;
+  /* border:1px solid purple; */
+  width: 93%;
+  height: 100vh;
+}
+
+
+.nav-menu-items .sidebar-list li:nth-child(1){
+  position: absolute;
+  font-size: 25px;
+  right: 0px;
+  /* height: 50px; */
+  /* background-color: aqua; */
+}
+
+li .account-icon{
+  width: 100%;
+  height: 200px;
+  margin-top: 70px;
+}
+
+.nav-menu-items .sidebar-list li:nth-child(3){
+  font-size: 25px;
+  padding: 15px 0;
+  /* background-color: burlywood; */
+  border-bottom: 5px solid white;
+  border-bottom-style: 20px;
+}
+.nav-menu-items .sidebar-list li:nth-child(4){
+  font-size: 22px;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  /* background-color: red; */
+}
+.nav-menu-items .sidebar-list li:nth-child(5){
+  font-size: 22px;
+  text-align: left;
+  /* background-color: aqua; */
+}
+.nav-menu-items .sidebar-list li:nth-child(6){
+  font-size: 22px;
+  position: absolute;
+  bottom:45px ;
+  /* background-color: burlywood; */
+}
+/* .MuiBadge-anchorOriginTopRightRectangle {
+  top: 20px;
+  right: 16px;
+  transform: scale(0.8) translate(50%, -50%);
+} */
+
+/* End */
+
+
+/*====== Customer-2nd-Page CSS ======*/
+
+h1,h2,h3,h5{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.containerDetails{
+  
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+  /* height: calc(100vh - 40px); */
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.containerDetails .mess-card{
+  position: absolute;
+  top: 5rem;
+}
+
+.mess-info h1{
+  font-size: 3.3rem;
+  letter-spacing: normal;
+}
+.mess-info{
+  padding: 3% 7%;
+}
+.mess-menus{
+  padding: 15px 0px;
+  border-left: 8px solid #FEC200;
+  margin-top: 10px;
+  /* border: 1px solid #FEC200; */
+  background-color: #ffffff;
+}
+.mess-menus li:nth-child(1){
+  display: inline-block;
+  width: 45%;
+  padding-left: 15px;
+}
+.mess-menus li:nth-child(2){
+  width: 45%;
+}
+.mess-menus li:nth-child(3){
+  width: 10%;
+}
+.veg{
+  transform: scale(.5);
+}
+@media only screen and (min-width: 1000px) {
+  /* .mess-card{
+    margin-left: 100px;
+  } */
+  .containerDetails{
+    width: 90vw;
+    margin: auto;
+  }
+  #mess-pic{
+    height: 17rem;
+  }
+}

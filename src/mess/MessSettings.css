@@ -1,0 +1,231 @@
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Recursive", sans-serif;
+}
+
+.photo #input[type="file"] {
+  display: none;
+}
+.mess-img img {
+  object-fit: cover;
+}
+.mess-img:hover {
+  cursor: pointer;
+  background: black;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.label .hover__icon {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 8rem;
+  left: 37%;
+  /* opacity: 0; */
+}
+
+/* .label .hover__icon:hover{
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+  } */
+
+.password-toogle-icon {
+  position: absolute;
+  top: 3rem;
+  right: 25px;
+  transform: scale(1.7);
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: visible;
+  margin: 0;
+} */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+/* .spinner-button {
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  height: 10px;
+  line-height: 10px;
+} */
+
+#inc-button {
+  left: 26.5rem;
+  top: 47px;
+}
+
+#dec-button {
+  left: 26.5rem;
+  top: 57px;
+}
+
+/* .arrows {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  color: #FFB800;
+  top: 42px;
+  right: 40px;
+  transform: scale(1.4);
+  cursor: pointer;
+} */
+
+/* .form-group input {
+  height: 4rem;
+} */
+
+/* .form-group .add-button {
+  position: absolute;
+  top: 52px;
+  right: 25px;
+  transform: scale(1.2);
+} */
+
+/* ************My Saved Menu css************** */
+.icon_action {
+  opacity: 0;
+}
+
+.menu-item-list:hover .icon_action {
+  opacity: 1;
+}
+
+/* .icon_aciton: */
+
+/* ************add menu list css************** */
+
+/* .main {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  margin-bottom: 50px;
+  width: 100%;
+} */
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list {
+  width: 100%;
+  padding-left: 0;
+  margin: auto;
+  max-height: 400px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+/* width */
+.list::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.list::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgb(226, 225, 224);
+}
+
+/* Handle */
+.list::-webkit-scrollbar-thumb {
+  background: #ffb800;
+  border-radius: 10px;
+}
+
+.task-input {
+  width: 100%;
+  padding: 15px 10px 10px 10px;
+  /* margin-right: 10px; */
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: 0;
+}
+.task-input:focus {
+  border: 1px solid grey;
+}
+
+.add-task-btn {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  cursor: pointer;
+}
+.add-task-btn :hover {
+  color: #da9f0a;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  height: 50px;
+  margin: 20px 0;
+  padding-bottom: 5px;
+  /* border: 2px solid red; */
+  border-left: 7px solid #ffb800;
+  border-radius: 5px;
+}
+
+.list-item span {
+  margin-left: 10px;
+}
+
+.task-btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.btn-delete :hover {
+  color: #da9f0a;
+}
+
+.btn-edit :hover {
+  color: #da9f0a;
+}
+
+.clear-btn {
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.clear-btn span {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  color: #ffb800;
+}
+
+.clear-btn span:hover {
+  color: #da9f0a;
+}
+
+.no-tasks {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
