@@ -26,17 +26,17 @@ const tokenCust = localStorage.getItem("token");
 // const refreshToken = localStorage.getItem("refreshToken");
 // const CustId = localStorage.getItem("userId");
 
-axios.defaults.baseURL = "http://localhost:9000/";
+axios.defaults.baseURL = "http://54.234.185.151:9000/";
 
 export const authAxiosMess = axios.create({
-  baseURL: "http://localhost:9000/",
+  baseURL: "http://54.234.185.151:9000/",
   headers: {
     Authorization: `Bearer ${token}`,
   },
 });
 
 export const authAxiosCust = axios.create({
-  baseURL: "http://localhost:9000/",
+  baseURL: "http://54.234.185.151:9000/",
   headers: {
     Authorization: `Bearer ${tokenCust}`,
   },

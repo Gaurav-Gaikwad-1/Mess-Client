@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 const ResetPassword = () => {
   let token = localStorage.getItem("reset_token");
   const resetAxios = axios.create({
-    baseURL: "http://localhost:9000/",
+    baseURL: "http://54.234.185.151:9000/",
     headers: {
       Authorization: `Bearer ${token}`,
     },
